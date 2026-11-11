@@ -1,4 +1,6 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2b3c6e">
+<style>html{color-scheme:light}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Livret Aïkido</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,9 +33,8 @@ h1 .kanji{font-size:.7em;color:var(--indigo);margin-left:.3em;letter-spacing:.05
 h2{font-family:var(--display);font-weight:700;font-size:22px;margin:0;text-wrap:balance}
 h3{font-family:var(--display);font-weight:600;font-size:18px;margin:0}
 nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px;border-bottom:1px solid var(--line);margin-bottom:18px}
-.tabrow{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px}
-.tabrow button{font:inherit;font-weight:500;font-size:14px;border:0;background:none;color:var(--muted);padding:9px 4px;border-radius:9px;cursor:pointer}
-.tabrow.seg{grid-template-columns:repeat(3,1fr)}
+.tabrow{display:flex;overflow-x:auto;scrollbar-width:none;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px}
+.tabrow button{flex:1 0 auto;font:inherit;font-weight:500;font-size:13.5px;border:0;background:none;color:var(--muted);padding:9px 7px;white-space:nowrap;border-radius:9px;cursor:pointer}
 .tabrow button[aria-pressed="true"],.tabrow button[aria-selected="true"]{background:var(--indigo);color:var(--on-indigo)}
 button:focus-visible,input:focus-visible,.card:focus-visible{outline:2px solid var(--indigo);outline-offset:2px}
 .chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
@@ -120,6 +121,29 @@ section.cat{margin-bottom:28px}
 .dangrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;font-size:14px}
 .dangrid ul{margin:0;padding-left:18px;font-variant-numeric:tabular-nums}
 @media (max-width:420px){.ptable td:first-child{width:45%}.vrow{grid-template-columns:1fr}.vrow .fr{color:var(--muted)}}
+/* Shodan */
+.linkbtn{font:inherit;background:none;border:0;padding:0;color:var(--indigo);font-weight:700;cursor:pointer;text-align:left;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.srow{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px;display:flex;flex-direction:column;gap:8px}
+.srowhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.srowhead .att{font-family:var(--display);font-size:17px}
+.tlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.tlist li{display:flex;align-items:center;gap:10px;padding:6px 0;border-top:1px solid var(--line)}
+.tlist li:first-child{border-top:0}
+.tlist input{width:20px;height:20px;accent-color:var(--ok);flex:none}
+.tbtn{font:inherit;font-size:15px;background:none;border:0;padding:4px 0;color:var(--ink);cursor:pointer;text-align:left;flex:1;min-width:0}
+.tbtn.free{border:1px dashed var(--line);border-radius:8px;padding:8px 10px;color:var(--muted)}
+.tlist li:has(input:checked) .tbtn{color:var(--muted);text-decoration:line-through}
+.pct{font-size:12px;font-variant-numeric:tabular-nums;padding:2px 8px;border-radius:999px;flex:none}
+.pct.p100{background:var(--indigo);color:var(--on-indigo)}
+.pct.p50{background:var(--indigo-soft);color:var(--indigo)}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.fig{margin:0;display:flex;flex-direction:column;gap:4px}
+.fig .pic{aspect-ratio:4/3.4;border-radius:10px;border:1px solid var(--line)}
+.fig .pic img{max-height:100%}
+.fig figcaption{font-size:14px;font-weight:700}
+.vids{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.vbtn{text-decoration:none;display:inline-block}
+.vsrc{font-size:12.5px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 /* Esprit de la nature & pensée du jour */
 .nature{background:var(--indigo-soft);border-left:4px solid var(--indigo);border-radius:0 12px 12px 0;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
@@ -133,7 +157,7 @@ section.cat{margin-bottom:28px}
 .pensee .ptexte{font-size:16px;line-height:1.7;margin:0}
 .pensee h2{text-align:center}
 .pensee .eyebrow{text-align:center}
-</style>
+</style></head><body>
 
 <div class="wrap">
   <header class="top">
@@ -143,6 +167,7 @@ section.cat{margin-bottom:28px}
   </header>
   <nav class="tabs"><div class="tabrow" role="tablist">
     <button role="tab" data-tab="techniques" aria-selected="true">Techniques</button>
+    <button role="tab" data-tab="shodan" aria-selected="false">Passage de Grade</button>
     <button role="tab" data-tab="quiz" aria-selected="false">Quiz</button>
     <button role="tab" data-tab="vocab" aria-selected="false">Vocabulaire</button>
     <button role="tab" data-tab="programme" aria-selected="false">Programme</button>
@@ -151,6 +176,7 @@ section.cat{margin-bottom:28px}
   <main>
     <div id="nojs" class="panel" style="margin-bottom:16px"><h2>La page ne peut pas démarrer ici</h2><p style="margin:0">Cette application a besoin de JavaScript, et ce lecteur l'a bloqué. Sur Android, Chrome ouvre les fichiers téléchargés en « page hors connexion » sans JavaScript. Ouvre ce fichier avec Firefox, ou utilise le lien de l'application en ligne.</p></div>
     <div id="tab-techniques"></div>
+    <div id="tab-shodan" hidden></div>
     <div id="tab-quiz" hidden></div>
     <div id="tab-vocab" hidden></div>
     <div id="tab-programme" hidden></div>
@@ -280,7 +306,9 @@ const VOCAB = [
   ["Suwari waza","Travail à genoux (les deux partenaires)","Formes de travail"],
   ["Kaeshi waza","Techniques de contre-prises","Formes de travail"],
   ["Henka waza","Enchaînements et variations","Formes de travail"],
-  ["Jiyu waza","Travail libre","Formes de travail"],
+  ["Jiyu waza (Jyu waza)","Travail libre","Formes de travail"],
+  ["Ninin gake","Travail contre deux partenaires","Formes de travail"],
+  ["Jo nage waza","Projections où Tori tient le jo saisi par Uke","Armes"],
   ["Ippan geiko","Pratique sous la forme usuelle","Formes de travail"],
   ["Ju no geiko","Pratique souple","Formes de travail"],
   ["Go no geiko","Pratique avec plus de fermeté de la part d'Uke","Formes de travail"],
@@ -318,6 +346,317 @@ const PROG = [
     ["Hanmi handachi waza",[["Shomen uchi","Ikkyo · Nikyo · Gokyo"],["Katate dori","Nikyo"]]]],
    notes:["Toutes les applications de Ude kime nage à partir de la base Shiho nage.","Hiji kime osae à partir de la base Ikkyo et Nikyo ura.","Plus toutes les techniques réalisables en Suwari waza et Hanmi handachi waza."]}
 ];
+
+// Shodan (1er Dan) : PDF « shodan.pdf » de Jef
+// techs : [nom, pourcentage ou null] ; free : travail libre
+const SHODAN = [
+ {id:"jury", title:"Liste du jury 1", sub:"Techniques demandées au passage du 1er Dan le 31 mai 2026. 100 % = demandée à chaque Tori, 50 % = à la moitié des Tori.", parts:[
+  ["Suwari waza",[{att:"Shomen uchi",count:"4 à 5 techniques",techs:[["Ikkyo",100],["Nikyo",100],["Sankyo",100],["Yonkyo",50],["Irimi nage",50],["Kote gaeshi",50]]}]],
+  ["Hanmi handachi waza",[{att:"Katate dori",count:"2 techniques",techs:[["Ikkyo",100],["Sankyo",100],["Uchi kaiten nage",50]]},
+    {att:"Ryote dori",count:"1 technique",techs:[["Shiho nage",100]]},
+    {att:"Ushiro ryokata dori",count:"0 à 2 techniques",techs:[["Sankyo",50],["Kokyu nage",50]]}]],
+  ["Tachi waza",[{att:"Ai hanmi katate dori",count:"3 techniques",techs:[["Ikkyo",100],["Nikyo",100],["Irimi nage",100]]},
+    {att:"Katate dori",count:"2 techniques",techs:[["Sokumen irimi nage",100],["Kokyu nage",100]]},
+    {att:"Kata dori",count:"2 techniques",techs:[["Ikkyo",100],["Sankyo",100]]},
+    {att:"Ryote dori",count:"4 techniques",techs:[["Kote gaeshi",100],["Shiho nage",100],["Ude kime nage",100],["Tenchi nage",100]]},
+    {att:"Chudan tsuki",count:"2 techniques",techs:[["Ikkyo",100],["Kote gaeshi",100]]},
+    {att:"Yokomen uchi",count:"4 techniques",techs:[["Ikkyo",100],["Yonkyo",100],["Kote gaeshi",100],["Shiho nage",100]]},
+    {att:"Kata dori men uchi",count:"3 techniques",techs:[["Ikkyo",100],["Koshi nage",50],["Kote gaeshi",50],["Kokyu nage",100]]}]],
+  ["Ushiro waza",[{att:"Ushiro ryote dori",count:"5 techniques",techs:[["Ikkyo",100],["Sankyo",50],["Irimi nage",100],["Kote gaeshi",100],["Shiho nage",100],["Juji garami",50]]},
+    {att:"Ushiro ryokata dori",count:"1 technique",techs:[["Sankyo",100]]}]],
+  ["Tanto dori",[{att:"Chudan tsuki",free:"Jyu waza : 2 à 3 techniques au choix"},
+    {att:"Yokomen uchi",count:"1 technique",techs:[["Gokyo",100]]}]],
+  ["Jo dori",[{att:"Chudan tsuki",free:"Jyu waza : 3 à 4 techniques au choix"},
+    {att:"Jo nage waza",free:"Jyu waza : 3 à 4 techniques au choix"}]],
+  ["Ninin gake",[{att:"Ryokata dori",free:"Jyu waza : 3 à 5 attaques"}]]
+ ]},
+ {id:"exemple", title:"Exemple d'interrogation", sub:"Exemple de déroulé d'un examen de Shodan.", parts:[
+  ["Suwari waza",[{att:"Shomen uchi",techs:[["Ikkyo"],["Nikyo"],["Sankyo"],["Yonkyo"],["Gokyo"],["Irimi nage"],["Kote gaeshi"]]}]],
+  ["Hanmi handachi waza",[{att:"Katate dori",techs:[["Ikkyo"],["Nikyo"],["Shiho nage"],["Uchi kaiten nage"],["Irimi nage"],["Kote gaeshi"]]}]],
+  ["Tachi waza",[{att:"Kata dori",techs:[["Ikkyo"],["Nikyo"]]},
+    {att:"Kata dori men uchi",techs:[["Ikkyo"],["Shiho nage"],["Ude kime nage"],["Kote gaeshi"]]},
+    {att:"Ryote dori",techs:[["Tenchi nage"],["Koshi nage"]]},
+    {att:"Chudan tsuki",techs:[["Irimi nage"],["Jyu waza"]]},
+    {att:"Yokomen uchi",techs:[["Ikkyo"],["Shiho nage"]]},
+    {att:"Ushiro ryote dori",techs:[["Ikkyo"],["Irimi nage"],["Shiho nage"],["Kote gaeshi"]]}]],
+  ["Tanto dori",[{att:"Yokomen uchi",techs:[["Gokyo"],["Shiho nage"]]},{att:"Chudan tsuki",free:"Jyu waza"}]],
+  ["Jo dori",[{att:"Chudan tsuki",free:"Jyu waza"},{att:"Jo nage waza",free:"Projections avec le jo"}]],
+  ["Ninin gake",[{att:"Ryokata dori",free:"Jyu waza"}]]
+ ]},
+ {"id": "complet", "title": "Programme complet", "sub": "Techniques à utiliser en priorité pour les interrogations de Shodan à Yondan. Le document ne détaille pas encore tanto dori et jo dori. Déroulé : suwari waza, hanmi handachi, tachi waza (saisies puis frappes), ushiro waza, buki waza (tanto et jo), taninzu gake.", "parts": [["Suwari waza", [{"att": "Shomen uchi", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Yonkyo"], ["Gokyo"], ["Irimi nage"], ["Kote gaeshi"], ["Kokyu nage"]]}, {"att": "Yokomen uchi", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Yonkyo"], ["Gokyo"], ["Irimi nage"], ["Kote gaeshi"], ["Kokyu nage"]]}, {"att": "Kata dori", "techs": [["Ikkyo"], ["Nikyo"]]}]], ["Hanmi handachi waza", [{"att": "Katate dori", "techs": [["Ikkyo"], ["Nikyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Kaiten nage", 0, "uchi ou soto"], ["Kokyu nage"]]}, {"att": "Ryote dori", "techs": [["Shiho nage"], ["Kokyu nage"]]}, {"att": "Ushiro ryokata dori", "techs": [["Ikkyo"], ["Sankyo"], ["Kote gaeshi"], ["Kokyu nage"]]}]], ["Tachi waza", [{"att": "Ai hanmi katate dori", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Uchi kaiten sankyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Ude kime nage"], ["Koshi nage"]]}, {"att": "Katate dori", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Kaiten nage"], ["Tenchi nage"], ["Sumi otoshi"], ["Hiji kime osae"], ["Ude kime nage"], ["Koshi nage"], ["Kokyu nage"]]}, {"att": "Kata dori", "techs": [["Ikkyo"], ["Nikyo"], ["Kokyu nage"]]}, {"att": "Muna dori", "techs": [["Ikkyo"], ["Shiho nage"], ["Uchi kaiten sankyo"]]}, {"att": "Ryote dori", "techs": [["Ikkyo"], ["Nikyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Ude kime nage"], ["Tenchi nage"], ["Koshi nage"], ["Kokyu nage"]]}, {"att": "Ryokata dori", "techs": [["Ikkyo"], ["Nikyo"], ["Sokumen irimi nage", 0, "naname kokyu nage"], ["Kokyu nage"]]}, {"att": "Katate ryote dori", "techs": [["Ikkyo"], ["Nikyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Kokyu ho"], ["Kokyu nage"], ["Koshi nage"], ["Ude kime nage"], ["Juji garami"]]}, {"att": "Chudan tsuki", "techs": [["Ikkyo"], ["Sankyo", 0, "uchi kaiten"], ["Irimi nage"], ["Kote gaeshi"], ["Kaiten nage", 0, "uchi ou soto"], ["Kokyu nage"], ["Ude kime nage"], ["Hiji kime osae"], ["Ushiro kiri otoshi"]]}, {"att": "Jodan tsuki", "techs": [["Ikkyo"], ["Sankyo", 0, "uchi kaiten"], ["Irimi nage"], ["Kote gaeshi"], ["Kaiten nage"], ["Kokyu nage"], ["Ude kime nage"], ["Koshi nage"]]}, {"att": "Shomen uchi", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo", 0, "soto kaiten ou uchi kaiten"], ["Yonkyo"], ["Gokyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Kaiten nage"], ["Kokyu nage"]]}, {"att": "Yokomen uchi", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Yonkyo"], ["Gokyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Ude kime nage"], ["Koshi nage"], ["Kokyu nage"]]}, {"att": "Kata dori men uchi", "techs": [["Ikkyo"], ["Nikyo"], ["Shiho nage"], ["Ude kime nage"], ["Koshi nage"], ["Kote gaeshi"], ["Irimi nage"], ["Kokyu nage"]]}]], ["Ushiro waza", [{"att": "Ushiro ryote dori", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Irimi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Juji garami"], ["Koshi nage"], ["Kokyu nage"]]}, {"att": "Ushiro ryokata dori", "techs": [["Ikkyo"], ["Nikyo"], ["Sankyo"], ["Kote gaeshi"], ["Irimi nage", 0, "naname kokyu nage"], ["Aiki otoshi"], ["Kokyu nage"], ["Ude kime nage"]]}, {"att": "Ushiro eri dori", "techs": [["Ikkyo"], ["Nikyo"], ["Irimi nage"], ["Shiho nage"], ["Tenchi nage"], ["Kote gaeshi"], ["Kokyu nage"]]}, {"att": "Ushiro katate dori kubishime", "techs": [["Ikkyo"], ["Sankyo"], ["Koshi nage"], ["Kote gaeshi"], ["Shiho nage"], ["Kokyu nage"]]}]], ["Buki waza", [{"att": "Tanto dori", "free": "Techniques non détaillées dans le programme"}, {"att": "Jo dori", "free": "Techniques non détaillées dans le programme"}]], ["Taninzu gake", [{"att": "Futari dori", "free": "Deux partenaires saisissent en même temps"}]]]}
+];
+// Termes du Shodan sans illustration dans le livret
+const SHODAN_TERMS = {
+  "jyu waza":"Travail libre : Tori enchaîne librement des techniques de son choix sur l'attaque donnée.",
+  "jo nage waza":"Tori tient le jo, Uke le saisit, et Tori le projette avec le jo.",
+  "ninin gake":"Travail contre deux partenaires qui attaquent ensemble ou à tour de rôle.",
+  "tanto dori":"Travail à mains nues contre une attaque au couteau (tanto).",
+  "jo dori":"Travail à mains nues contre une attaque au bâton (jo).",
+  "ushiro waza":"Attaques par l'arrière."
+};
+
+
+// Vidéos YouTube (trouvées par recherche, titre correspondant à la technique)
+const VIDEOS = {
+  "ikkyo":["5M5swP62c14","Ikkyo sur différentes attaques · Stefan Stenudd"],
+  "nikyo":["RRJNv2fdxCc","Nikyo sur saisies et frappes · Stefan Stenudd"],
+  "sankyo":["QcBBdpStfcA","Sankyo sur saisies et frappes · Stefan Stenudd"],
+  "yonkyo":["ga8cPgcGJlM","Yonkyo sur saisies et frappes · Stefan Stenudd"],
+  "gokyo":["B8kUTHXCV6Y","Tanto dori, yokomen uchi gokyo"],
+  "ude-garami":["HSZJ6XQivks","Ude garami, démonstration"],
+  "hiji-kime-osae":["OKNi_ubEdzA","Hiji kime osae sur jodan tsuki"],
+  "irimi-nage":["LZpPUhXx8Nc","Irimi nage sur saisies et frappes · Stefan Stenudd"],
+  "shiho-nage":["yrxY8NJnUbw","Shiho nage sur les attaques de base · Stefan Stenudd"],
+  "kote-gaeshi":["yWwsz-17tSU","Kote gaeshi · Stefan Stenudd"],
+  "kaiten-nage":["PcbujEXJjXA","Uchi kaiten nage et soto kaiten nage"],
+  "tenchi-nage":["79L8tJpM7Mc","Tenchi nage sur saisies et frappes · Stefan Stenudd"],
+  "kokyu-ho":["45dAUfMUrLg","Suwari waza ryote dori kokyu ho"],
+  "sokumen-irimi-nage":["TuspqDvLQcM","Sokumen irimi nage (appelé kokyuho par l'auteur) · Stefan Stenudd"],
+  "juji-garami":["97h8Zxkif_E","Ushiro ryote dori juji garami nage"],
+  "ude-kime-nage":["nbdu19T9Y3U","Ude kime nage sur ai hanmi katate dori"],
+  "aiki-otoshi":["BwjPId2Gq64","Aiki otoshi, technique en 2 minutes"],
+  "sumi-otoshi":["3PnP8PjpFKM","Katate dori sumi otoshi"],
+  "ushiro-kiri-otoshi":["DftaZNcGlRA","Ushiro kiri otoshi"],
+  "kokyu-nage":["UMjZYrWXMc4","Kokyu nage sur saisies et frappes · Stefan Stenudd"],
+  "koshi-nage":["7E_nJn8nu30","Koshi nage · Stefan Stenudd"],
+  "mae-geri":["YY8xPVklX9I","Techniques contre mae geri · Stefan Stenudd"],
+  "suwari-waza":["xdH6Xha74qs","Ikkyo en suwari waza · Stefan Stenudd"],
+  "hanmi-handachi-waza":["TcfRgBlSFk8","Hanmi handachi waza, katate dori, jiyu waza"],
+  "jyu waza":["BawFPNS4AqA","Katate dori jiyu waza"],
+  "jo nage waza":["dkfAD3tTZAE","Jo nage waza"],
+  "ninin gake":["tX-hGLuheDc","Travail contre deux attaquants · Stefan Stenudd"],
+  "tanto dori":["2q544hEG698","Tanto dori sur chudan tsuki (en français)"],
+  "jo dori":["HHWwn5O_eBM","Jo dori sur chudan tsuki (en français)"]
+};
+
+// Vidéos choisies par Jef (feuille Excel), par forme, attaque et technique
+const JEF_VIDEOS = {
+ "suwari waza|shomen uchi|ikkyo": "eXTgZMILWZw",
+ "suwari waza|shomen uchi|nikyo": "J8MpnscyjtA",
+ "suwari waza|shomen uchi|sankyo": "bRc-UjpA0Jk",
+ "suwari waza|shomen uchi|yonkyo": "LRtp2w2-pOY",
+ "suwari waza|shomen uchi|irimi nage": "zgQIIymWg_k",
+ "suwari waza|shomen uchi|kote gaeshi": "oKwQpEJM8pc",
+ "hanmi handachi waza|katate dori|ikkyo": "fIDhArw7IbA",
+ "hanmi handachi waza|katate dori|sankyo": "5xv4Ydb689k",
+ "hanmi handachi waza|katate dori|uchi kaiten nage": "pOLjrSaKR2s",
+ "hanmi handachi waza|ryote dori|shiho nage": "aPrGOf0qDac",
+ "hanmi handachi waza|ushiro ryokata dori|sankyo": "HdsX2oizp14",
+ "hanmi handachi waza|ushiro ryokata dori|kokyu nage": "pLs0ndYRDvY",
+ "tachi waza|ai hanmi katate dori|ikkyo": "kyoz5YAaNXM",
+ "tachi waza|ai hanmi katate dori|nikyo": "hmhUozNZoYo",
+ "tachi waza|ai hanmi katate dori|irimi nage": "STMpGLm-m1Q",
+ "tachi waza|katate dori|sokumen irimi nage": "OHAi98r0yf8",
+ "tachi waza|katate dori|kokyu nage": "rPiRb-2qUDQ",
+ "tachi waza|kata dori|ikkyo": "TNKal-1HahE",
+ "tachi waza|kata dori|sankyo": "XlMJQMbfKo8",
+ "tachi waza|ryote dori|kote gaeshi": "8bcHCMOuU-E",
+ "tachi waza|ryote dori|shiho nage": "K6vZ7ok8AKg",
+ "tachi waza|ryote dori|ude kime nage": "izJbCcp2PfM",
+ "tachi waza|ryote dori|tenchi nage": "shSIhWoPm6c",
+ "tachi waza|chudan tsuki|ikkyo": "IvjkTl_Iy48",
+ "tachi waza|chudan tsuki|kote gaeshi": "9B0FDMGLeiE",
+ "tachi waza|yokomen uchi|ikkyo": "_zCVwunKwxU",
+ "tachi waza|yokomen uchi|yonkyo": "0Y1tMGTY-Vc"
+};
+
+// Vidéos courtes de François Pichereau (lignes vides de la feuille de Jef)
+const PICH_VIDEOS = {
+ "tachi waza|yokomen uchi|kote gaeshi": "nRCBMNb7Go4",
+ "tachi waza|yokomen uchi|shiho nage": "8_zv1Uk4uXM",
+ "tachi waza|kata dori men uchi|ikkyo": "umE7GipKWU8",
+ "tachi waza|kata dori men uchi|koshi nage": "ayGnDqqvcFw",
+ "tachi waza|kata dori men uchi|kote gaeshi": "GEbtVST4urE",
+ "tachi waza|kata dori men uchi|kokyu nage": "w9X7laxFMUI",
+ "ushiro waza|ushiro ryote dori|ikkyo": "IrHylGtoJJQ",
+ "ushiro waza|ushiro ryote dori|sankyo": "Ov7c2t1MCG4",
+ "ushiro waza|ushiro ryote dori|irimi nage": "M_2nGeS5iSs",
+ "ushiro waza|ushiro ryote dori|kote gaeshi": "iu9-_ZpEWOU",
+ "ushiro waza|ushiro ryote dori|shiho nage": "MYicGt3foWA",
+ "ushiro waza|ushiro ryote dori|juji garami": "NZaHRJ0ij4E",
+ "ushiro waza|ushiro ryokata dori|sankyo": "aRVemLiiwkc",
+ "tanto dori|yokomen uchi|gokyo": "WbLNDOMnhpM",
+ "suwari waza|shomen uchi|gokyo": "D65OSmnIo5o",
+ "hanmi handachi waza|katate dori|nikyo": "YnQHWC5DbUw",
+ "hanmi handachi waza|katate dori|shiho nage": "aPrGOf0qDac",
+ "hanmi handachi waza|katate dori|irimi nage": "503gVAdBP_A",
+ "hanmi handachi waza|katate dori|kote gaeshi": "gCO1popi3kU",
+ "tachi waza|kata dori|nikyo": "K9JXQkg-TTw",
+ "tachi waza|kata dori men uchi|shiho nage": "-MJhSxH76V4",
+ "tachi waza|kata dori men uchi|ude kime nage": "mD62_onL63s",
+ "tachi waza|ryote dori|koshi nage": "CJf5PdOrwjE",
+ "tachi waza|chudan tsuki|irimi nage": "MErUNbthdHY",
+ "tachi waza|ushiro ryote dori|ikkyo": "IrHylGtoJJQ",
+ "tachi waza|ushiro ryote dori|irimi nage": "M_2nGeS5iSs",
+ "tachi waza|ushiro ryote dori|shiho nage": "MYicGt3foWA",
+ "tachi waza|ushiro ryote dori|kote gaeshi": "iu9-_ZpEWOU",
+ "tanto dori|yokomen uchi|shiho nage": "rMkDuYwXsGo"
+};
+
+const PROG_VIDEOS = {
+"suwari waza|shomen uchi|ikkyo": "eXTgZMILWZw",
+"suwari waza|shomen uchi|nikyo": "J8MpnscyjtA",
+"suwari waza|shomen uchi|sankyo": "bRc-UjpA0Jk",
+"suwari waza|shomen uchi|yonkyo": "LRtp2w2-pOY",
+"suwari waza|shomen uchi|gokyo": "D65OSmnIo5o",
+"suwari waza|shomen uchi|irimi nage": "zgQIIymWg_k",
+"suwari waza|shomen uchi|kote gaeshi": "oKwQpEJM8pc",
+"suwari waza|shomen uchi|kokyu nage": "8-J8fsnJrmQ",
+"suwari waza|yokomen uchi|ikkyo": "qtMIMFFdAa8",
+"suwari waza|yokomen uchi|nikyo": "2QhwgJewf3w",
+"suwari waza|yokomen uchi|sankyo": "WVI3ZByGh8o",
+"suwari waza|yokomen uchi|yonkyo": "lGGI7hJjg_o",
+"suwari waza|yokomen uchi|gokyo": "oFus9mb_1tM",
+"suwari waza|yokomen uchi|irimi nage": "lyyMewZhorg",
+"suwari waza|yokomen uchi|kote gaeshi": "dcLYSj8E1q0",
+"suwari waza|yokomen uchi|kokyu nage": "NMDxSu2voBQ",
+"suwari waza|kata dori|ikkyo": "xPXdIpq-zXc",
+"suwari waza|kata dori|nikyo": "Hz2J2kM5hus",
+"hanmi handachi waza|katate dori|ikkyo": "fIDhArw7IbA",
+"hanmi handachi waza|katate dori|nikyo": "YnQHWC5DbUw",
+"hanmi handachi waza|katate dori|irimi nage": "503gVAdBP_A",
+"hanmi handachi waza|katate dori|kote gaeshi": "gCO1popi3kU",
+"hanmi handachi waza|katate dori|shiho nage": "aPrGOf0qDac",
+"hanmi handachi waza|katate dori|kaiten nage": "pOLjrSaKR2s",
+"hanmi handachi waza|katate dori|kokyu nage": "rpex8NlCwmk",
+"hanmi handachi waza|ryote dori|shiho nage": "JdAFs8xrRHU",
+"hanmi handachi waza|ryote dori|kokyu nage": "_QaAz5tdAxw",
+"hanmi handachi waza|ushiro ryokata dori|ikkyo": "hS79SMa5fFE",
+"hanmi handachi waza|ushiro ryokata dori|sankyo": "HdsX2oizp14",
+"hanmi handachi waza|ushiro ryokata dori|kote gaeshi": "SwO3RoQG4Oc",
+"hanmi handachi waza|ushiro ryokata dori|kokyu nage": "pLs0ndYRDvY",
+"tachi waza|ai hanmi katate dori|ikkyo": "kyoz5YAaNXM",
+"tachi waza|ai hanmi katate dori|nikyo": "hmhUozNZoYo",
+"tachi waza|ai hanmi katate dori|sankyo": "JNucTtFGZGw",
+"tachi waza|ai hanmi katate dori|uchi kaiten sankyo": "nC_EA5Uj1YU",
+"tachi waza|ai hanmi katate dori|irimi nage": "STMpGLm-m1Q",
+"tachi waza|ai hanmi katate dori|kote gaeshi": "LhDFNQzYKE8",
+"tachi waza|ai hanmi katate dori|shiho nage": "RVgNC05JxSQ",
+"tachi waza|ai hanmi katate dori|ude kime nage": "kg5F_aN5_Ts",
+"tachi waza|ai hanmi katate dori|koshi nage": "IkG0ue8bXTo",
+"tachi waza|katate dori|ikkyo": "5DR2ATA_X9Y",
+"tachi waza|katate dori|nikyo": "ESeQSfg1o3Q",
+"tachi waza|katate dori|sankyo": "bYtGQgp21gk",
+"tachi waza|katate dori|irimi nage": "p9a-Iu_q90I",
+"tachi waza|katate dori|kote gaeshi": "hRIccRuhbSA",
+"tachi waza|katate dori|shiho nage": "jOCU-sgBVWo",
+"tachi waza|katate dori|kaiten nage": "fDgG4J-UA0k",
+"tachi waza|katate dori|tenchi nage": "HYz1EbR99l4",
+"tachi waza|katate dori|sumi otoshi": "ByXUMTLfskA",
+"tachi waza|katate dori|hiji kime osae": "HLDUSYgEFO4",
+"tachi waza|katate dori|ude kime nage": "BymVlxGd6BM",
+"tachi waza|katate dori|koshi nage": "YbCHLQt7F9c",
+"tachi waza|katate dori|kokyu nage": "rPiRb-2qUDQ",
+"tachi waza|kata dori|ikkyo": "TNKal-1HahE",
+"tachi waza|kata dori|nikyo": "K9JXQkg-TTw",
+"tachi waza|kata dori|kokyu nage": "_qwNAt2A4SQ",
+"tachi waza|muna dori|ikkyo": "_NJZ4dGA0I8",
+"tachi waza|muna dori|shiho nage": "RZnxmCDsKTk",
+"tachi waza|muna dori|uchi kaiten sankyo": "1HrQDXE-atU",
+"tachi waza|ryote dori|ikkyo": "W3966IKbPlE",
+"tachi waza|ryote dori|nikyo": "Iscwemzf96M",
+"tachi waza|ryote dori|irimi nage": "OqZJfg7SBq0",
+"tachi waza|ryote dori|kote gaeshi": "8bcHCMOuU-E",
+"tachi waza|ryote dori|shiho nage": "K6vZ7ok8AKg",
+"tachi waza|ryote dori|ude kime nage": "izJbCcp2PfM",
+"tachi waza|ryote dori|tenchi nage": "shSIhWoPm6c",
+"tachi waza|ryote dori|koshi nage": "CJf5PdOrwjE",
+"tachi waza|ryote dori|kokyu nage": "cf0uD0Ys3BU",
+"tachi waza|ryokata dori|ikkyo": "9PQrTfgLKmo",
+"tachi waza|ryokata dori|nikyo": "w3DMvEgLx9A",
+"tachi waza|ryokata dori|sokumen irimi nage": "MCFig0BhqCQ",
+"tachi waza|ryokata dori|kokyu nage": "tyVhsUDQRxs",
+"tachi waza|katate ryote dori|ikkyo": "5puINJeVO_g",
+"tachi waza|katate ryote dori|nikyo": "Ork8roqH68A",
+"tachi waza|katate ryote dori|irimi nage": "pR8oaFCPXXI",
+"tachi waza|katate ryote dori|kote gaeshi": "hQRDGc3Oc9A",
+"tachi waza|katate ryote dori|shiho nage": "vFNRD-_YEYo",
+"tachi waza|katate ryote dori|kokyu ho": "7pZ1BMUF_as",
+"tachi waza|katate ryote dori|kokyu nage": "KfM3kIRfNkY",
+"tachi waza|katate ryote dori|koshi nage": "THAjuIbpkcI",
+"tachi waza|katate ryote dori|ude kime nage": "Ml52h_GKrqw",
+"tachi waza|katate ryote dori|juji garami": "zG51CPcfiRQ",
+"tachi waza|chudan tsuki|ikkyo": "IvjkTl_Iy48",
+"tachi waza|chudan tsuki|sankyo": "YDRSZGBHUq0",
+"tachi waza|chudan tsuki|irimi nage": "MErUNbthdHY",
+"tachi waza|chudan tsuki|kote gaeshi": "9B0FDMGLeiE",
+"tachi waza|chudan tsuki|kaiten nage": "vBahWH3pqTo",
+"tachi waza|chudan tsuki|kokyu nage": "AhdjO06_93o",
+"tachi waza|chudan tsuki|ude kime nage": "Ec5R8nyYWOg",
+"tachi waza|chudan tsuki|hiji kime osae": "gGksHc6Ej5Q",
+"tachi waza|chudan tsuki|ushiro kiri otoshi": "z9sjt0duCA4",
+"tachi waza|jodan tsuki|ikkyo": "icXLgsg5row",
+"tachi waza|jodan tsuki|sankyo": "MCBJDQHcjDk",
+"tachi waza|jodan tsuki|irimi nage": "suYhRUdg3gQ",
+"tachi waza|jodan tsuki|kote gaeshi": "uEhHgK3RnyY",
+"tachi waza|jodan tsuki|kaiten nage": "Jw2xm8v-euo",
+"tachi waza|jodan tsuki|kokyu nage": "98pu3ZqPOmg",
+"tachi waza|jodan tsuki|ude kime nage": "p8E4xBekOSQ",
+"tachi waza|shomen uchi|ikkyo": "pWyQEmcbRYQ",
+"tachi waza|shomen uchi|nikyo": "5l5aM_Li1oo",
+"tachi waza|shomen uchi|sankyo": "UpkQJjEhHhc",
+"tachi waza|shomen uchi|yonkyo": "hh45k7dKPtw",
+"tachi waza|shomen uchi|gokyo": "nR0irbbgHyw",
+"tachi waza|shomen uchi|irimi nage": "Km_UCCs5nl0",
+"tachi waza|shomen uchi|kote gaeshi": "4ZP4PpJVjK4",
+"tachi waza|shomen uchi|shiho nage": "Jasm-kuWQ4A",
+"tachi waza|shomen uchi|kaiten nage": "tIvmcUfdhYY",
+"tachi waza|shomen uchi|kokyu nage": "PL2EOtLgqe0",
+"tachi waza|yokomen uchi|ikkyo": "_zCVwunKwxU",
+"tachi waza|yokomen uchi|nikyo": "Sqx6kDmkq0A",
+"tachi waza|yokomen uchi|sankyo": "uiaopY89OPY",
+"tachi waza|yokomen uchi|yonkyo": "0Y1tMGTY-Vc",
+"tachi waza|yokomen uchi|gokyo": "lwK2P2Qb0m4",
+"tachi waza|yokomen uchi|irimi nage": "gZvhR_ntxLs",
+"tachi waza|yokomen uchi|kote gaeshi": "nRCBMNb7Go4",
+"tachi waza|yokomen uchi|shiho nage": "8_zv1Uk4uXM",
+"tachi waza|yokomen uchi|ude kime nage": "av3cy-785U0",
+"tachi waza|yokomen uchi|koshi nage": "HElGR2k5uxI",
+"tachi waza|yokomen uchi|kokyu nage": "LhWuYF16CIk",
+"tachi waza|kata dori men uchi|ikkyo": "umE7GipKWU8",
+"tachi waza|kata dori men uchi|nikyo": "bwAnDWppCXk",
+"tachi waza|kata dori men uchi|shiho nage": "-MJhSxH76V4",
+"tachi waza|kata dori men uchi|ude kime nage": "mD62_onL63s",
+"tachi waza|kata dori men uchi|koshi nage": "ayGnDqqvcFw",
+"tachi waza|kata dori men uchi|kote gaeshi": "GEbtVST4urE",
+"tachi waza|kata dori men uchi|irimi nage": "-8Fikgbdnxc",
+"tachi waza|kata dori men uchi|kokyu nage": "w9X7laxFMUI",
+"ushiro waza|ushiro ryote dori|ikkyo": "IrHylGtoJJQ",
+"ushiro waza|ushiro ryote dori|nikyo": "t_f54SvJ5IM",
+"ushiro waza|ushiro ryote dori|sankyo": "Ov7c2t1MCG4",
+"ushiro waza|ushiro ryote dori|irimi nage": "M_2nGeS5iSs",
+"ushiro waza|ushiro ryote dori|kote gaeshi": "iu9-_ZpEWOU",
+"ushiro waza|ushiro ryote dori|shiho nage": "MYicGt3foWA",
+"ushiro waza|ushiro ryote dori|juji garami": "NZaHRJ0ij4E",
+"ushiro waza|ushiro ryote dori|koshi nage": "Hrx8EYUgV7w",
+"ushiro waza|ushiro ryote dori|kokyu nage": "19X3GZo2GgY",
+"ushiro waza|ushiro ryokata dori|ikkyo": "1AxrrJbjWYA",
+"ushiro waza|ushiro ryokata dori|nikyo": "ra5PXm-Y9fk",
+"ushiro waza|ushiro ryokata dori|sankyo": "aRVemLiiwkc",
+"ushiro waza|ushiro ryokata dori|kote gaeshi": "rYO5w663uik",
+"ushiro waza|ushiro ryokata dori|aiki otoshi": "kzIE0gJdPiU",
+"ushiro waza|ushiro ryokata dori|kokyu nage": "qEHvH_B7azQ",
+"ushiro waza|ushiro ryokata dori|ude kime nage": "Sbqpc4REMRw",
+"ushiro waza|ushiro eri dori|ikkyo": "BLiJ7bLLqFk",
+"ushiro waza|ushiro eri dori|nikyo": "UXpVDqKI8d0",
+"ushiro waza|ushiro eri dori|irimi nage": "s_uU3JMAgY0",
+"ushiro waza|ushiro eri dori|shiho nage": "UMYOuNIubKM",
+"ushiro waza|ushiro eri dori|tenchi nage": "BQLLFkPz2g4",
+"ushiro waza|ushiro eri dori|kote gaeshi": "gp3ZwrZ-q_g",
+"ushiro waza|ushiro eri dori|kokyu nage": "LNnMlLFfgaI",
+"ushiro waza|ushiro katate dori kubishime|ikkyo": "tx7XCx60Cj0",
+"ushiro waza|ushiro katate dori kubishime|sankyo": "B-rPybNXlV8",
+"ushiro waza|ushiro katate dori kubishime|koshi nage": "8iBTJK6po4s",
+"ushiro waza|ushiro katate dori kubishime|kote gaeshi": "gV5mMz73WCI",
+"ushiro waza|ushiro katate dori kubishime|shiho nage": "Zc6-_WX7RRY",
+"ushiro waza|ushiro katate dori kubishime|kokyu nage": "UUzWQGbWAn0"
+};
+Object.entries(PROG_VIDEOS).forEach(([k,v])=>{if(!PICH_VIDEOS[k])PICH_VIDEOS[k]=v});
+
+// Vidéos choisies par Jef pour une attaque précise : "attaque|technique"
+const COMBO_VIDEOS = {
+  "shomen uchi|ikkyo":["0pX19IYpKMU","Shomen uchi ikkyo · vidéo choisie par Jef"]
+};
 
 // Pensées d'ouverture : principes spirituels de l'aïkido (textes originaux inspirés de la vision de Morihei Ueshiba)
 const PENSEES = [
@@ -429,7 +768,7 @@ function picHTML(id,cls="pic",alt=""){return `<div class="${cls}"><img src="${IM
 /* ---------- Onglets ---------- */
 function showTab(name){
   document.querySelectorAll(".tabrow button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===name));
-  ["techniques","quiz","vocab","programme"].forEach(t=>$("#tab-"+t).hidden=t!==name);
+  ["techniques","shodan","quiz","vocab","programme"].forEach(t=>$("#tab-"+t).hidden=t!==name);
   store.set("tab",name); window.scrollTo(0,0);
 }
 document.querySelectorAll(".tabrow button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
@@ -466,6 +805,7 @@ function openTech(id){
     <div class="sheethead"><div><span class="tag">${esc(c.name)}</span><h2 id="sheetTitle" style="margin-top:6px">${esc(t.name)}</h2>${t.alias?`<div class="muted">${esc(t.alias)}</div>`:""}</div><button class="x" aria-label="Fermer">×</button></div>
     ${picHTML(id,"pic",t.name)}
     <p style="margin:0">${esc(t.desc)}</p>
+    ${videoHTML(t.name)}
     ${NATURE[id]?`<div class="nature"><div class="eyebrow">L'esprit de la nature</div><p class="img">${esc(NATURE[id][1])}</p><p class="sens">${esc(t.name)} : ${esc(NATURE[id][0])}</p><p>${esc(NATURE[id][2])}</p></div>`:""}
     ${asTech.length?`<div><h3>Au programme des kyu</h3><ul class="proglist">${asTech.map(x=>`<li><b>${x.g}</b> · ${esc(x.forme)} · sur ${esc(x.att)}</li>`).join("")}</ul></div>`:""}
     ${asAtt.length?`<div><h3>Techniques travaillées sur cette attaque</h3><ul class="proglist">${asAtt.map(x=>`<li><b>${x.g}</b> · ${esc(x.forme)} : ${esc(x.list)}</li>`).join("")}</ul></div>`:""}
@@ -486,7 +826,8 @@ const MODES=[
   {id:"cat",name:"Familles de techniques",sub:"Saisie, frappe, immobilisation, projection…"},
   {id:"jp2fr",name:"Vocabulaire japonais → français",sub:VOCAB.length+" termes du livret"},
   {id:"fr2jp",name:"Vocabulaire français → japonais",sub:"Trouver le mot japonais"},
-  {id:"prog",name:"Programme des kyu",sub:"Quelle technique sur quelle attaque ?"}
+  {id:"prog",name:"Programme des kyu",sub:"Quelle technique sur quelle attaque ?"},
+  {id:"shodan",name:"Programme du Shodan",sub:"Techniques demandées par le jury"}
 ];
 let qs={modes:store.get("modes",["img2name","name2img","cat","prog","jp2fr","fr2jp"]),len:store.get("len",10)};
 let miss=store.get("miss",{}), stats=store.get("stats",{rounds:0,best:0,answered:0,right:0});
@@ -517,6 +858,11 @@ function makeQ(mode){
     const jp=mode==="jp2fr";
     return {key:"v:"+v.jp,text:jp?`Que signifie « ${v.jp} » ?`:`Comment dit-on « ${v.fr} » ?`,big:true,
       opts:opts.map(o=>({label:jp?o.fr:o.jp,ok:o===v})),explain:`${v.jp} : ${v.fr}`,answer:jp?v.fr:v.jp}}
+  if(mode==="shodan"){const rows=[];SHODAN[0].parts.forEach(([f,rr])=>rr.forEach(r=>{if(r.techs)rows.push({f,a:r.att,list:r.techs})}));
+    const r=wpick(rows,x=>"s:"+x.f+x.a); const good=pick(r.list)[0]; const inList=new Set(r.list.map(([t])=>techOf(t)));
+    const opts=shuffle([good,...shuffle(progCandidates.filter(x=>!inList.has(techOf(x)))).slice(0,3)]);
+    return {key:"s:"+r.f+r.a,img:techOf(r.a),text:`Shodan · ${r.f} sur ${r.a} : laquelle de ces techniques est demandée ?`,
+      opts:opts.map(o=>({label:o,ok:o===good})),explain:`Shodan, ${r.f}, ${r.a} : ${r.list.map(([t,p])=>t+" ("+p+" %)").join(" · ")}.`,answer:good}}
   if(mode==="prog"){const r=wpick(progRows,x=>"p:"+x.g+x.forme+x.att); const good=pick(r.list);
     const inList=new Set(r.list.map(x=>techOf(x)));
     const opts=shuffle([good,...shuffle(progCandidates.filter(x=>!inList.has(techOf(x)))).slice(0,3)]);
@@ -577,8 +923,70 @@ function answer(k){
   if(ok){round.score++;if(miss[q.key])miss[q.key]--}else{miss[q.key]=(miss[q.key]||0)+1;round.wrong.push(q)}
   stats.answered++;if(ok)stats.right++;store.set("miss",miss);store.set("stats",stats);
   $("#fb").innerHTML=`<div class="feedback ${ok?"ok":"ko"}"><strong>${ok?"Correct":"Réponse : "+esc(q.answer)}</strong>${esc(q.explain)}</div>`;
-  const nav=$(".panel .navrow");nav.insertAdjacentHTML("afterbegin",`<button class="btn" id="next">${round.i+1<round.qs.length?"Question suivante":"Voir le résultat"}</button>`);
+  const nav=$("#tab-quiz .panel .navrow");nav.insertAdjacentHTML("afterbegin",`<button class="btn" id="next">${round.i+1<round.qs.length?"Question suivante":"Voir le résultat"}</button>`);
   $("#next").onclick=()=>{round.i++;round.answered=false;renderQuiz();window.scrollTo(0,0)}; $("#next").focus({preventScroll:true});
+}
+
+
+function videoOf(name,ctx,forme){const j=ctx&&forme&&JEF_VIDEOS[norm(forme)+"|"+norm(ctx)+"|"+norm(name)];if(j)return [j,"Vidéo choisie par Jef"];const pv=ctx&&forme&&PICH_VIDEOS[norm(forme)+"|"+norm(ctx)+"|"+norm(name)];if(pv)return [pv,"Vidéo de François Pichereau"];return (ctx&&COMBO_VIDEOS[norm(ctx)+"|"+norm(name)])||VIDEOS[techOf(name)]||VIDEOS[norm(name)]}
+function videoHTML(name,ctx,forme){
+  const v=videoOf(name,ctx,forme), q=encodeURIComponent("aikido "+(ctx?ctx+" ":"")+name);
+  return `<div class="vids">${v?`<a class="btn vbtn" href="https://youtu.be/${v[0]}" target="_blank" rel="noopener">▶ Vidéo : ${esc(name)}</a><span class="muted vsrc">${esc(v[1])}</span>`:""}<a class="linkbtn" href="https://www.youtube.com/results?search_query=${q}" target="_blank" rel="noopener">${v?"Autres vidéos sur YouTube":"Chercher une vidéo sur YouTube"}</a></div>`;
+}
+/* ---------- Shodan ---------- */
+let shodanList=store.get("shodanList","jury"), mastered=store.get("mastered",{});
+const termOf=s=>SHODAN_TERMS[norm(s)];
+function descOf(s){const id=techOf(s);return id?techById[id].desc:(termOf(s)||"")}
+function shodanKeys(L){const k=[];L.parts.forEach(([f,rows])=>rows.forEach(r=>(r.techs||[]).forEach(([t])=>k.push(L.id+"|"+f+"|"+r.att+"|"+t))));return k}
+function renderShodan(){
+  const el=$("#tab-shodan"), L=SHODAN.find(x=>x.id===shodanList), keys=shodanKeys(L), done=keys.filter(k=>mastered[k]).length;
+  el.innerHTML=`<div class="toolbar">
+    <div class="chips" role="group" aria-label="Programme" style="flex-wrap:wrap"><button class="chip" data-g="shodan" aria-pressed="${shodanList!=="complet"}">Shodan</button><button class="chip" data-g="complet" aria-pressed="${shodanList==="complet"}">Programme complet</button></div>
+    ${shodanList!=="complet"?`<div class="chips" role="group" aria-label="Liste Shodan" style="flex-wrap:wrap;padding-left:12px;border-left:3px solid var(--line)">${SHODAN.filter(x=>x.id!=="complet").map(x=>`<button class="chip" data-l="${x.id}" aria-pressed="${x.id===shodanList}">${esc(x.title)}</button>`).join("")}</div>`:""}
+    <p class="muted" style="margin:0">${esc(L.sub)} Touchez une technique pour voir l'attaque et la technique illustrées.</p>
+    <div class="panel" style="gap:10px">
+      <div class="qmeta"><span><b style="color:var(--ink)">${done} / ${keys.length}</b> techniques maîtrisées</span><span>${keys.length?Math.round(100*done/keys.length):0} %</span></div>
+      <div class="progress"><i style="width:${keys.length?100*done/keys.length:0}%"></i></div>
+      <div class="navrow" style="flex-wrap:wrap"><button class="btn" id="draw">Tirage façon jury</button>${done?`<button class="btn ghost" id="resetM">Tout décocher</button>`:""}</div>
+    </div>
+  </div>
+  ${L.parts.map(([f,rows])=>`<section class="cat"><div class="cathead"><h2>${esc(f)}</h2>${techOf(f)||termOf(f)?`<button class="linkbtn" data-forme="${esc(f)}">Voir la forme</button>`:""}</div>
+    ${rows.map(r=>`<div class="srow">
+      <div class="srowhead"><button class="linkbtn att" data-f="${esc(f)}" data-a="${esc(r.att)}">${esc(r.att)}</button>${r.count?`<span class="tag">${esc(r.count)}</span>`:""}</div>
+      ${r.free?`<button class="tbtn free" data-f="${esc(f)}" data-a="${esc(r.att)}" data-t="Jyu waza">${esc(r.free)}</button>`:""}
+      ${r.techs?`<ul class="tlist">${r.techs.map(([t,p,n])=>{const k=L.id+"|"+f+"|"+r.att+"|"+t;return `<li><input type="checkbox" aria-label="${esc(t)} maîtrisée" data-k="${esc(k)}" ${mastered[k]?"checked":""}><button class="tbtn" data-f="${esc(f)}" data-a="${esc(r.att)}" data-t="${esc(t)}">${esc(t)}</button>${p?`<span class="pct p${p}">${p} %</span>`:""}${n?`<span class="muted tnote">(${esc(n)})</span>`:""}</li>`}).join("")}</ul>`:""}
+    </div>`).join("")}</section>`).join("")}`;
+  el.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{shodanList=b.dataset.l;store.set("shodanList",shodanList);store.set("shodanSub",shodanList);renderShodan()});
+  el.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>{shodanList=b.dataset.g==="complet"?"complet":store.get("shodanSub","jury");store.set("shodanList",shodanList);renderShodan()});
+  el.querySelectorAll(".tbtn").forEach(b=>b.onclick=()=>openCombo(b.dataset.f,b.dataset.a,b.dataset.t));
+  el.querySelectorAll(".att").forEach(b=>b.onclick=()=>openCombo(b.dataset.f,b.dataset.a,null));
+  el.querySelectorAll("[data-forme]").forEach(b=>b.onclick=()=>openCombo(b.dataset.forme,null,null));
+  el.querySelectorAll(".tlist input").forEach(c=>c.onchange=()=>{if(c.checked)mastered[c.dataset.k]=1;else delete mastered[c.dataset.k];store.set("mastered",mastered);renderShodan()});
+  $("#draw").onclick=()=>drawJury();
+  if($("#resetM"))$("#resetM").onclick=()=>{keys.forEach(k=>delete mastered[k]);store.set("mastered",mastered);renderShodan()};
+}
+function figure(name,role){const id=techOf(name);if(!id)return "";return `<figure class="fig">${picHTML(id,"pic",name)}<figcaption><span class="muted">${role}</span> ${esc(name)}</figcaption></figure>`}
+function openCombo(forme,att,tech,draw){
+  const ov=$("#overlay"), title=tech?`${att} · ${tech}`:(att||forme);
+  const hide=draw&&!draw.shown;
+  const lines=[[forme,"Forme"],[att,"Attaque"],[tech,"Technique"]].filter(([n])=>n&&descOf(n)).map(([n,r])=>`<li><b>${r} · ${esc(n)}</b> : ${esc(descOf(n))}</li>`).join("");
+  const figs=[att?figure(att,"Attaque"):figure(forme,"Forme"),tech&&!hide?figure(tech,"Technique"):""].filter(Boolean);
+  ov.innerHTML=`<div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="sheethead"><div><span class="tag">${draw?"Tirage façon jury · ":""}${esc(forme)}</span><h2 id="sheetTitle" style="margin-top:6px">${hide?`${esc(att)} : ${esc(tech)}`:esc(title)}</h2>${draw&&draw.pct?`<div class="muted">Demandée à ${draw.pct===100?"chaque Tori":"la moitié des Tori"} (${draw.pct} %)</div>`:""}</div><button class="x" aria-label="Fermer">×</button></div>
+    ${hide?`<p style="margin:0">Exécute la technique dans ta tête, ou sur le tapis, puis vérifie.</p>`:""}
+    ${!hide?videoHTML(tech&&tech!=="Jyu waza"?tech:(tech==="Jyu waza"&&(termOf(forme)||termOf(att))?(termOf(att)?att:forme):(tech||att||forme)),tech&&tech!=="Jyu waza"&&att?att:"",forme):""}
+    ${figs.length?`<div class="figs">${figs.join("")}</div>`:""}
+    ${!hide&&tech&&!techOf(tech)&&!termOf(tech)?`<p class="muted" style="margin:0">Pas d'illustration de cette technique dans le livret.</p>`:""}
+    ${!hide&&lines?`<ul class="proglist">${lines}</ul>`:""}
+    ${draw?`<div class="navrow" style="flex-wrap:wrap">${hide?`<button class="btn" id="reveal">Voir la technique</button>`:""}<button class="btn ${hide?"ghost":""}" id="again2">Nouveau tirage</button></div>`:""}
+  </div>`;
+  ov.hidden=false;document.body.style.overflow="hidden";
+  $(".x",ov).onclick=closeSheet;$(".x",ov).focus();
+  if(draw){if($("#reveal"))$("#reveal").onclick=()=>openCombo(forme,att,tech,{...draw,shown:true});$("#again2").onclick=drawJury}
+}
+function drawJury(){
+  const pool=[];(SHODAN.find(x=>x.id===shodanList)||SHODAN[0]).parts.forEach(([f,rows])=>rows.forEach(r=>(r.techs||[]).forEach(([t,p])=>{for(let i=0;i<(p===100?2:1);i++)pool.push({f,a:r.att,t,p})})));
+  const d=pick(pool);openCombo(d.f,d.a,d.t,{pct:d.p,shown:false});
 }
 
 /* ---------- Vocabulaire ---------- */
@@ -642,7 +1050,7 @@ function showPensee(){
 $("#openThought").onclick=showPensee;
 
 $("#nojs").remove();
-renderTechniques();renderQuiz();renderVocab();renderProgramme();
+renderTechniques();renderShodan();renderQuiz();renderVocab();renderProgramme();
 showTab(store.get("tab","techniques"));
 showPensee();
 </script>
